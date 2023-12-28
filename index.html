@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontes--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500&display=swap" rel="stylesheet">
+    <!--      --->
+    <!-- Icones-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--       -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Amparo Animais</title>
+</head>
+<body>
+    <header class="head-top">
+        <div class="logo">
+            <img src="imagens/logo teste_2.png" alt="Seu Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="#sobre.html">Sobre Nós</a></li>
+                <li><a href="#servicos.html">Nossos Serviços</a></li>
+                <li><a href="#contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Carrossel-->
+        <div class="carousel-container">
+            <div class="carousel-slide" id="slide1">
+                <img src="imagens/dog_abd1.jpg" alt="Imagem 1">
+                <p>Hà 30 milhões <br>de cães abandonados no Brasil</p>
+            </div>
+            <div class="carousel-slide" id="slide2">
+                <img src="imagens/dog_abd2.jpg" alt="Imagem 2">
+                <p>A sua ajuda<br>é muito importante</p>
+            </div>
+            <div class="carousel-slide" id="slide3">
+                <img src="imagens/dog_abd3.jpg" alt="Imagem 3">
+                <p>Faça sua parte<br>Adote</p>
+            </div>
+
+            <div class="carousel-button" onclick="changeSlide(-1)">
+                <i class="material-icons">keyboard_arrow_left</i>
+            </div>
+            <div class="carousel-button" onclick="changeSlide(1)">
+                <i class="material-icons">keyboard_arrow_right</i>
+            </div>                      
+        </div>
+        <!-- -->
+        <!-- Cads-->
+    </main>
+    <!--Cards e descrições -->
+    <section>
+        <div class="card-container">
+            <div class="card">
+                <h1>Oque Fazemos</h1>
+            </div>
+            <div class="card">
+                <h2>Resgate e Reabilitação</h2>
+                <p>Salvamos animais em situações de perigo, fornecemos cuidados veterinários e trabalhamos para reabilitar aqueles que precisam de ajuda.</p>
+            </div>
+            <div class="card">    
+                <h2>Educação e Conciêntização</h2>
+                <p>Oferecemos recursos educativos sobre o cuidado adequado de animais, promovendo a importância da esterilização, vacinação entre outros.</p>
+            </div>              
+            <div class="card">
+                <h2>Programas de Adoção Responsável</h2>
+                <p> Facilitamos adoções responsáveis, conectando animais resgatados a lares amorosos e dedicados.</p>
+            </div>
+        </div>
+            <div class="card-container">    
+            <div class="card">
+                <h1>Como Você Pode Ajudar</h1>
+            </div>
+            <div class="card">
+                <h2>Voluntáriado</h2>                
+                <p>Junte-se a nós como voluntário para fazer a diferença na vida dos animais necessitados.</p>
+            </div>          
+            <div class="card">
+                <h2>Doações</h2>
+                <p>Suas doações ajudam a financiar os cuidados médicos, alimentação e instalações necessárias para garantir o bem-estar dos animais resgatados.</p>
+            </div>          
+            <div class="card">
+                <h2>Conscientização</H2> 
+                <p>Compartilhe nossa missão e informações sobre adoção responsável nas redes sociais para espalhar a conscientização.</p>
+            </div>
+        </div>
+    </section>
+    <!-------------------->
+    <!--script-->
+    <script src="script.js"></script>
+    
+    <!-- ------->
+    
+    <footer>
+        <!-- Rodapé da sua página -->
+        <p>&copy; 2023 XXXXXXXXXXXXXXXXX. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
