@@ -1,35 +1,35 @@
-body {
-    font-family:'Kanit', sans-serif;
-    margin: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;1,400&family=Inter:wght@100;200;300;400;500;600;700;800&family=Kanit:wght@100;300;500&display=swap');
+
+*{
+    font-family: 'inter', 'sans-serif';
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px; /* espaçamento das letras*/
 }
+
 /* Header*/
-.head-top {
-    position: fixed;
-    top: 0;
+.head-top {    
+    display: flex;
     width: 100%;
     background-color: rgb(248, 101, 4); /* cor do Cabeçalho*/
-    height: 100px;
-    color: #f7f4f4;
-    padding: 10px;
-    display: flex;
+    height: 120px;
     justify-content: space-between;
     align-items: center;
-    border: rgb(148, 148, 146) solid 1px;
     z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos na página */
 }
 .logo img {
     height: 100px; /* Ajuste conforme necessário */
     border: #000000 solid 2px;
     border-radius: 50%;
-    cursor: pointer;
+    margin: 15px;  
 }
 nav {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 24px;
 }
 nav ul {
     list-style-type: none;
@@ -76,14 +76,13 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Garante que a imagem cubra completamente a área do contêiner */
-
 }
 .carousel-slide p {
     position: absolute;
     bottom: 10px; /* Ajuste conforme necessário */
     left: 10px; /* Ajuste conforme necessário para a posição à esquerda */
     color: #ffffff;
-    font-size: 42px;
+    font-size: 50px;
     margin: 50px;
     max-width: 80%; /* Ajuste conforme necessário para a largura máxima do texto */
 }
@@ -96,6 +95,7 @@ main {
       opacity: 1;
     }
   }
+
 /* Paragrafo do Carossel*/
 .carousel-slide p::first-line { 
     animation: fadenIn 3s 5s forwards;
@@ -106,6 +106,7 @@ main {
 }
 .carousel-slide p { 
     font-weight: bold; /* Destaque a primeira linha do parágrafo */
+    font-size: 40px;
     gap: 20px;
     color: #fffffe; /*Cor do texto */
     text-shadow: 1px 1px 2px #333;
@@ -142,61 +143,124 @@ main {
     right: 0px;
 }
 /*      */
-/* Cards*/
+section {
+    width: 100%;
+    color: #000000;
+    padding: 10px;
+    background-color: #fae1035b;
+}   
 .card-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: auto;
-    max-height: 500px;
-    margin-top: 20px; /* Ajuste conforme necessário para o espaço entre o carrossel e os cartões */
-    gap: 5px;
-    padding: 5px ;
+    justify-content: center;
 }
-.card {
-    background-color: #f0f0f0;
-    border: 1px solid #e0dddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    max-width: 600px; /* Ajuste conforme necessário */
-    width: 100%;
+.card_container1, .card1, .card2, .card3 {
+    border: 1px solid #000; /* Adicione a borda aqui */
+    padding: 10px; /* Adicione o preenchimento interno desejado */
+    margin-right: 20px; /* Para adicionar algum espaço entre os cartões */
+    max-width: 400px; /* Define uma largura máxima para evitar que o texto se estenda indefinidamente */
+    text-align: center;
+    transition: all  .4s;
+}
+
+.card_container1 h1 {
+    padding: 10px;
+    font-size: 1.5em; /* Tamanho do texto para o título */
     text-align: center;
 }
-.card {
-    flex: 1; /* Ocupa todo o espaço disponível */
-    max-width: 100%; /* Não ultrapassa a largura máxima do contêiner */
-    transition: background-color 1.0s ease, border 1.0s ease; /* Transição de 0.5 segundos com a função de temporização ease */
+.icon-dog {
+    font-size: 2.0em;
+
 }
-.card h1,
-.card h2 {
-    color: #0c0000;
+.card1 h2 {
+    font-size: 1.5em; /* Tamanho do texto para o título */
 }
-.card p {
-    color: #666;
-    max-width: 100%; /* Garante que o texto não ultrapasse a largura do card */
-    overflow: hidden; /* Esconde qualquer texto que ultrapasse o card */
-    text-overflow: ellipsis; /* Adiciona reticências (...) para indicar texto truncado */    
+.card1 p {
+    font-size: 1em; /* Tamanho do texto para o parágrafo */
 }
-.card:hover {
+.card_container1:hover {
+    background-color: #000000; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
     cursor: pointer;
-    background-color:rgb(247, 186, 148) ;
-    border: solid green 2px;
-    border-radius: 15px;
-
+}
+.card1:hover {
+    background-color: #575757; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+.card2:hover {
+    background-color: #756f6f; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+.card3:hover {
+    background-color: #756f6f; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
 }
 
-/*      */
-/* Rodapé */
-footer {
-    background-color: rgb(248, 101, 4);
-    color: rgb(0, 0, 0);
+/* -------------------*/
+.card-container1 {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    
+}
+.card_container2, .cards1, .cards2, .cards3 {
+    border: 1px solid #000; /* Adicione a borda aqui */
+    padding: 10px; /* Adicione o preenchimento interno desejado */
+    margin-right: 20px; /* Para adicionar algum espaço entre os cartões */
+    max-width: 400px; /* Define uma largura máxima para evitar que o texto se estenda indefinidamente */
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    /* Adicionando estas propriedades para centralizar o texto */
-    line-height: 50px; /* Igual à altura do footer */
+    transition: all  .4s;
 }
+
+.card_container2 h1 {
+    padding: 10px;
+    font-size: 1.5em; /* Tamanho do texto para o título */
+    text-align: center;
+}
+.icon-dog {
+    font-size: 2.0em;
+
+}
+.cards1 h2 {
+    font-size: 1.5em; /* Tamanho do texto para o título */
+}
+.cards1 p {
+    font-size: 1em; /* Tamanho do texto para o parágrafo */
+}
+.card_container2:hover {
+    background-color: #000000; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+.cards1:hover {
+    background-color: #575757; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+.cards2:hover {
+    background-color: #756f6f; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+.cards3:hover {
+    background-color: #756f6f; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+
+
+
+
+
 
 

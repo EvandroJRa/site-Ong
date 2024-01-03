@@ -9,21 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500&display=swap" rel="stylesheet">
     <!--      --->
     <!-- Icones-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--       -->
     <link rel="stylesheet" href="styles.css">
-    <title>Amparo Animais</title>
+    <link rel="stylesheet" href="styles_Footer.css">   
+    <title>Animais</title>
 </head>
 <body>
     <header class="head-top">
-        <div class="logo">
-            <img src="imagens/logo teste_2.png" alt="Seu Logo">
+        <div id="log"class="logo">
+            <img src="imagens/logo teste_2.png" alt="LogoMarca">
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="#sobre.html">Sobre Nós</a></li>
-                <li><a href="#servicos.html">Nossos Serviços</a></li>
+                <li><a href="#index.html">Home</a></li>
+                <li><a href="#sobre.html">Nosso Trabalho</a></li>
+                <li><a href="#servicos.html">Concentização</a></li>
                 <li><a href="#contato.html">Contato</a></li>
             </ul>
         </nav>
@@ -43,63 +45,144 @@
                 <img src="imagens/dog_abd3.jpg" alt="Imagem 3">
                 <p>Faça sua parte<br>Adote</p>
             </div>
-
             <div class="carousel-button" onclick="changeSlide(-1)">
-                <i class="material-icons">keyboard_arrow_left</i>
+                <i class="fa-solid fa-chevron-left"></i>
             </div>
             <div class="carousel-button" onclick="changeSlide(1)">
-                <i class="material-icons">keyboard_arrow_right</i>
+                <i class="fa-solid fa-chevron-right"></i>
             </div>                      
         </div>
+
+
         <!-- -->
-        <!-- Cads-->
     </main>
     <!--Cards e descrições -->
     <section>
         <div class="card-container">
-            <div class="card">
-                <h1>Oque Fazemos</h1>
-            </div>
-            <div class="card">
+            <div class="card_container1">
+                <h1>Nosso Trabalho</h1>
+                <i class="fa-solid fa-paw icon-dog"></i>
+            </div>    
+
+            <div class="card1">
                 <h2>Resgate e Reabilitação</h2>
-                <p>Salvamos animais em situações de perigo, fornecemos cuidados veterinários e trabalhamos para reabilitar aqueles que precisam de ajuda.</p>
+                <p>Salvamos animais em situações de perigo, fornecemos cuidados
+                veterinários e trabalhamos para reabilitar aqueles que precisam de ajuda.</p>
             </div>
-            <div class="card">    
+
+            <div class="card2">    
                 <h2>Educação e Conciêntização</h2>
                 <p>Oferecemos recursos educativos sobre o cuidado adequado de animais, promovendo a importância da esterilização, vacinação entre outros.</p>
-            </div>              
-            <div class="card">
+            </div>   
+
+            <div class="card3">
                 <h2>Programas de Adoção Responsável</h2>
                 <p> Facilitamos adoções responsáveis, conectando animais resgatados a lares amorosos e dedicados.</p>
-            </div>
+            </div>                       
         </div>
-            <div class="card-container">    
-            <div class="card">
-                <h1>Como Você Pode Ajudar</h1>
-            </div>
-            <div class="card">
-                <h2>Voluntáriado</h2>                
+
+        <div class="card-container1">
+            <div class="card_container2">
+                <h1>Como você pode ajudar</h1>
+                <i class="fa-solid fa-paw icon-dog"></i>
+            </div>    
+
+            <div class="cards1">
+                <h2>Voluntáriado</h2>
                 <p>Junte-se a nós como voluntário para fazer a diferença na vida dos animais necessitados.</p>
-            </div>          
-            <div class="card">
+            </div>
+
+            <div class="cards2">    
                 <h2>Doações</h2>
                 <p>Suas doações ajudam a financiar os cuidados médicos, alimentação e instalações necessárias para garantir o bem-estar dos animais resgatados.</p>
-            </div>          
-            <div class="card">
-                <h2>Conscientização</H2> 
+            </div>   
+
+            <div class="cards3">
+                <h2>Conscientização</h2>
                 <p>Compartilhe nossa missão e informações sobre adoção responsável nas redes sociais para espalhar a conscientização.</p>
             </div>
-        </div>
+        </div>                    
     </section>
-    <!-------------------->
-    <!--script-->
-    <script src="script.js"></script>
-    
-    <!-- ------->
-    
+    <!--footer -->    
     <footer>
-        <!-- Rodapé da sua página -->
-        <p>&copy; 2023 XXXXXXXXXXXXXXXXX. Todos os direitos reservados.</p>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Sua logo aqui</h1>
+                <p> xxxxxxxx</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram" alt="instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook" alt="facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp" alt="whatsapp"></i>
+                    </a>               
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>xxxxxxxxxxxxxxxx</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">xxxxxxxxxx</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">xxxxxxxxxx</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">xxxxxxxxxx</a>
+                </li>                       
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>xxxxxx</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">xxxxx</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">xxxxx</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">xxxxx</a>
+                </li>                       
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Se escreva</h3>
+
+                <p>
+                    Digite seu e-mail
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button> 
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2023 Todos os direitos reservados
+
+        </div>    
     </footer>
+
+    <!--script-->
+    <script src="script.js"></script>    
+    <!-- ------->   
 </body>
 </html>

@@ -48,5 +48,9 @@ setTimeout(autoAdvance, 10000); // Inicialize após 10 segundos
 // Exibir o primeiro slide ao carregar a página
 showSlide(currentSlide);
 
- //Fim da Animação do carrossel// 
+ //Fim da Animação do carrossel//
+ 
+// Menu Amburguer dispositivos moveis
+
+
 
