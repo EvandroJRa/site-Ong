@@ -6,8 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
 /* Header*/
 .head-top {    
     display: flex;
@@ -49,99 +49,106 @@ nav a:hover {
     font-size: 24px;
     transition: 0.3s ease; 
 }
-/*          */
-/*Carrossel */
-main {
-    margin-top: 1px;
-    flex: 1;
-    display: flex;
+/*   Principal    */
+.trabalho  {
+    display: grid;
+    color: aliceblue;
+    padding: 15px;
+    gap: 1px;
+    border: #063506 solid 2px;
     justify-content: center;
+    text-align: center;
+    background-color: #000000;
+}
+h1 {
+    font-size: 48px;
+}
+.dog_cat {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    font-size: 32px;
+    padding: 1px;
+    gap: 5px;
     align-items: center;
+    text-align: center;
 }
-.carousel-container {
-    position: relative;
-    width: 100%;
-    max-width: 100%; /* Garante que o contêiner tenha a largura total */
-    height: 50vh; /* Ocupa 50% da altura da tela */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+.fa-heart {
+    color: red;
+    transition: all .4s;    
 }
-.carousel-slide {
-    display: flex; /* Adicionado */
-    justify-content: center; /* Adicionado */
-    width: 100%;
-    height: 100%;
+.fa-heart:hover {
+    color: rgb(255, 255, 255);    
 }
-.carousel-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Garante que a imagem cubra completamente a área do contêiner */
+/*  Main2    */ 
+.text_ {
+    background-color: #f5ebeb;
+    text-align: center;
+    border-top: #ffe600 solid 2px;
+    border-bottom: #000000 solid 2px;
 }
-.carousel-slide p {
-    position: absolute;
-    bottom: 10px; /* Ajuste conforme necessário */
-    left: 10px; /* Ajuste conforme necessário para a posição à esquerda */
-    color: #ffffff;
-    font-size: 50px;
-    margin: 50px;
-    max-width: 80%; /* Ajuste conforme necessário para a largura máxima do texto */
+h2 {
+    font-size: 42px;
+    font-family: 'Dancing Script';
+    text-align: center;
+    line-height: 1.0;
+    padding: 1px;
 }
-/* Defina a animação fadenIn */
-@keyframes fadenIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-/* Paragrafo do Carossel*/
-.carousel-slide p::first-line { 
-    animation: fadenIn 3s 5s forwards;
-    font-weight: bold; /* Destaque a primeira linha do parágrafo */
-    gap: 20px;
-    color: #ffe600; /*Cor do texto */
-    text-shadow: 1px 1px 2px #333;
+#coracao { 
+    font-size: 48px;
+    transition: all 0.4s;
 }
-.carousel-slide p { 
-    font-weight: bold; /* Destaque a primeira linha do parágrafo */
-    font-size: 40px;
-    gap: 20px;
-    color: #fffffe; /*Cor do texto */
-    text-shadow: 1px 1px 2px #333;
+#coracao:hover {
+   color: blueviolet;
 }
-/* Estilo inicial oculto do paragrafo */
-.hidden {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-/*------------------------*/
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-10%);
-    background-color: #ffffff00;
-    color: #ffe600;
-    border: none;
-    padding: 2px;
-    cursor: pointer;
-    font-size: 24px;   
+/* Galeria de Imagens */
+.cardx_dog,
+.cardx_cat {
+    background-color: rgb(255, 239, 219);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    transition: all .4s;
+    margin-bottom: 5px;
 }
-.carousel-button:focus {
-    outline: none;
+.image-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 10px 5px 12px rgb(142, 156, 160);
+    margin: 15px;
+    gap: 30px;
+    transition: all .5s;
 }
-.carousel-button i {
-    margin-right: 5px; /* Espaço à direita do ícone */
-    font-size: 40px;
+.image-container:hover {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f5ebeb;
+    background-color: #24685f;
+    box-shadow: 10px 10px 5px 12px rgb(115, 128, 117);
+    margin: 15px;
+    gap: 30px;
 }
-.carousel-button:first-child {
-    left: 0px;
+.image-container img {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+    margin: 15px;
+    gap: 30px;
 }
-.carousel-button:last-child {
-    right: 0px;
-}
-/*      */
+/* cards e descrição     */
 section {
     width: 100%;
     color: #000000;
@@ -162,7 +169,6 @@ section {
     gap: 15px;
     box-shadow: 5px 5px 5px 3px rgb(142, 156, 160);
 }
-
 .card_container1 h1 {
     padding: 10px;
     font-size: 1.5em; /* Tamanho do texto para o título */
@@ -170,7 +176,6 @@ section {
 }
 .icon-dog {
     font-size: 2.0em;
-
 }
 .card1 h2 {
     font-size: 1.5em; /* Tamanho do texto para o título */
@@ -206,8 +211,7 @@ section {
 .card-container1 {
     display: flex;
     justify-content: center;
-    padding: 15px;
-    
+    padding: 15px;  
 }
 .card_container2, .cards1, .cards2, .cards3 {
     border: 1px solid #000; /* Adicione a borda aqui */
@@ -218,6 +222,7 @@ section {
     transition: all  .4s;
     box-shadow: 5px 5px 5px 3px rgb(142, 156, 160);
 }
+
 .card_container2 h1 {
     padding: 10px;
     font-size: 1.5em; /* Tamanho do texto para o título */
