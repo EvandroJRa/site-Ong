@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Exo:ital,wght@0,100;0,200;0,300;1,400&family=Inter:wght@100;200;300;400;500;600;700;800&family=Kanit:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+*{
+    font-family: 'Overpass';
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header*/
+.head-top {    
+    display: flex;
+    width: 100%;
+    background-color: rgb(248, 101, 4); /* cor do Cabeçalho*/
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos na página */
+}
+.logo img {
+    height: 100px; /* Ajuste conforme necessário */
+    border: #000000 solid 2px;
+    border-radius: 50%;
+    margin: 15px;  
+}
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+nav a:hover {
+    color: #a0fd0b;
+    font-size: 24px;
+    transition: 0.3s ease; 
+}
+/*   Principal    */
+.trabalho  {
+    display: grid;
+    color: aliceblue;
+    padding: 15px;
+    gap: 1px;
+    border: #063506 solid 2px;
+    justify-content: center;
+    text-align: center;
+    background-color: #000000;
+}
+h1 {
+    font-size: 48px;
+}
+.dog_cat {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    font-size: 32px;
+    padding: 1px;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+}
+.fa-heart {
+    color: red;
+    transition: all .4s;    
+}
+.fa-heart:hover {
+    color: rgb(255, 255, 255);    
+}
+/*  Main2    */ 
+.text_ {
+    background-color: #f5ebeb;
+    text-align: center;
+    border-top: #ffe600 solid 2px;
+    border-bottom: #000000 solid 2px;
+}
+h2 {
+    font-size: 42px;
+    font-family: 'Dancing Script';
+    text-align: center;
+    line-height: 1.0;
+    padding: 1px;
+}
+#coracao { 
+    font-size: 48px;
+    transition: all 0.4s;
+}
+#coracao:hover {
+   color: blueviolet;
+}
+.cards3:hover {
+    background-color: #756f6f; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+/*Main2*/
+.lei {
+    display: flex;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+.lei_p {
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.foto_capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 80px;
+    
+}
+.foto_capa img {
+    max-width: 500px;
+    height: auto;
+    border: #ffe600 solid 1px;
+    border-radius: 10px;
+}
+.texto_p {
+    text-align: justify;
+    margin: 25px;
+    width: 800px;
+    word-spacing: 2px; /*Define o espaçamento entre as palavras.*/
+}
+strong, .dezembro  {
+    font-family: 'Overpass';
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;/*Define a transformação do texto (maiúsculas, minúsculas, capitalização.*/
+}
+.foto_capa1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    gap: 35px;
+}
+.imagem1 {
+    max-width: 500px;
+    height: auto;
+    border: #ffe600 solid 1px;
+    border-radius: 10px;
+}
+.oms  {
+    font-family: 'Overpass';
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;/*Define a transformação do texto (maiúsculas, minúsculas, capitalização.*/
+}
+.foto_capa2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    margin-top: 100px;
+}
+.imagem2 {
+    max-width: 500px;
+    height: auto;
+    border: #ffe600 solid 1px;
+    border-radius: 10px;
+}
+/*--xxxxxxxxxxxxxxxxxxxxx--*/
+.cuidados {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    border-top: 5px solid #2b2d31;/*Linha de divisão acima do texto */
+    padding-top: 15px;/* Espaçamento de 5px entre a linha e o texto */
+}
+.cuidados_p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+h2 {
+    color: #3366cc;
+  }

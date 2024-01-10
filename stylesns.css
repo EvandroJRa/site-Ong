@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Exo:ital,wght@0,100;0,200;0,300;1,400&family=Inter:wght@100;200;300;400;500;600;700;800&family=Kanit:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+*{
+    font-family: 'Overpass';
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Header*/
+.head-top {    
+    display: flex;
+    width: 100%;
+    background-color: rgb(248, 101, 4); /* cor do Cabeçalho*/
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos na página */
+}
+.logo img {
+    height: 100px; /* Ajuste conforme necessário */
+    border: #000000 solid 2px;
+    border-radius: 50%;
+    margin: 15px;  
+}
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+nav a:hover {
+    color: #a0fd0b;
+    font-size: 24px;
+    transition: 0.3s ease; 
+}
+/*   Principal    */
+.trabalho  {
+    display: grid;
+    color: aliceblue;
+    padding: 15px;
+    gap: 1px;
+    border: #063506 solid 2px;
+    justify-content: center;
+    text-align: center;
+    background-color: #000000;
+}
+h1 {
+    font-size: 48px;
+}
+.dog_cat {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    font-size: 32px;
+    padding: 1px;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+}
+.fa-heart {
+    color: red;
+    transition: all .4s;    
+}
+.fa-heart:hover {
+    color: rgb(255, 255, 255);    
+}
+/*  Main2    */ 
+.text_ {
+    background-color: #f5ebeb;
+    text-align: center;
+    border-top: #ffe600 solid 2px;
+    border-bottom: #000000 solid 2px;
+}
+h2 {
+    font-size: 42px;
+    font-family: 'Dancing Script';
+    text-align: center;
+    line-height: 1.0;
+    padding: 1px;
+}
+#coracao { 
+    font-size: 48px;
+    transition: all 0.4s;
+}
+#coracao:hover {
+   color: blueviolet;
+}
+/* Galeria de Imagens */
+.cardx_dog,
+.cardx_cat {
+    background-color: rgb(255, 239, 219);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    transition: all .4s;
+    margin-bottom: 5px;
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 10px 5px 12px rgb(142, 156, 160);
+    margin: 15px;
+    gap: 30px;
+    transition: all .5s;
+}
+.image-container:hover {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f5ebeb;
+    background-color: #24685f;
+    box-shadow: 10px 10px 5px 12px rgb(115, 128, 117);
+    margin: 15px;
+    gap: 30px;
+}
+.image-container img {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+    margin: 15px;
+    gap: 30px;
+}
+/* cards e descrição     */
+section {
+    width: 100%;
+    color: #000000;
+    padding: 10px;
+    background-color: antiquewhite;
+}   
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+.card_container1, .card1, .card2, .card3 {
+    border: 1px solid #000; /* Adicione a borda aqui */
+    padding: 10px; /* Adicione o preenchimento interno desejado */
+    margin-right: 20px; /* Para adicionar algum espaço entre os cartões */
+    max-width: 400px; /* Define uma largura máxima para evitar que o texto se estenda indefinidamente */
+    text-align: center;
+    transition: all  .4s;
+    gap: 15px;
+    box-shadow: 5px 5px 5px 3px rgb(142, 156, 160);
+}
+.card_container1 h1 {
+    padding: 10px;
+    font-size: 1.5em; /* Tamanho do texto para o título */
+    text-align: center;
+}
+.icon-dog {
+    font-size: 2.0em;
+}
+.card1 h2 {
+    font-size: 1.5em; /* Tamanho do texto para o título */
+}
+.card1 p {
+    font-size: 1em; /* Tamanho do texto para o parágrafo */
+}
+.card_container1:hover {
+    background-color: #000000; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+.card1:hover {
+    background-color: #575757; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+.card2:hover {
+    background-color: #756f6f; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+.card3:hover {
+    background-color: #756f6f; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+/* -------------------*/
+.card-container1 {
+    display: flex;
+    justify-content: center;
+    padding: 15px;  
+}
+.card_container2, .cards1, .cards2, .cards3 {
+    border: 1px solid #000; /* Adicione a borda aqui */
+    padding: 10px; /* Adicione o preenchimento interno desejado */
+    margin-right: 20px; /* Para adicionar algum espaço entre os cartões */
+    max-width: 400px; /* Define uma largura máxima para evitar que o texto se estenda indefinidamente */
+    text-align: center;
+    transition: all  .4s;
+    box-shadow: 5px 5px 5px 3px rgb(142, 156, 160);
+}
+
+.card_container2 h1 {
+    padding: 10px;
+    font-size: 1.5em; /* Tamanho do texto para o título */
+    text-align: center;
+}
+.icon-dog {
+    font-size: 2.0em;
+
+}
+.cards1 h2 {
+    font-size: 1.5em; /* Tamanho do texto para o título */
+}
+.cards1 p {
+    font-size: 1em; /* Tamanho do texto para o parágrafo */
+}
+.card_container2:hover {
+    background-color: #000000; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 3px rgb(16, 65, 78);
+}
+.cards1:hover {
+    background-color: #575757; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+.cards2:hover {
+    background-color: #756f6f; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
+.cards3:hover {
+    background-color: #756f6f; 
+    color: #fffffe;
+    border: #ffe600 solid 1px;
+    cursor: pointer;
+}
