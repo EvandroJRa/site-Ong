@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Exo:ital,wght@0,100;0,200;0,300;1,400&family=Inter:wght@100;200;300;400;500;600;700;800&family=Kanit:wght@100;300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;1,100&display=swap');
 *{
-    font-family: 'Overpass';
+    font-family: cursive;
+    font-size: 24px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    letter-spacing: 1px; /* espaçamento das letras*/
 }
 /* Header*/
 .head-top {    
@@ -179,12 +181,13 @@ section {
     font-size: 2.0em;
     color: #575757;
 }
-.card1 h2 {
-    font-size: 2.0rem; /* Tamanho do texto para o título */
+h2 {
+    font-size: 1.5rem; /* Tamanho do texto para o título */
 }
-.card1 p {
-    font-size: 1rem; /* Tamanho do texto para o parágrafo */
-    text-align: justify;
+p {
+    font-size: 1.0rem; /* Tamanho do texto para o parágrafo */
+    text-align: center;
+    border-top: 1px;
 }
 .card1:hover, .cards1:hover {
     background-color: #575757; 
@@ -205,3 +208,27 @@ section {
     cursor: pointer;
 }
 /* -------------------*/
+.cadastro {
+    display: flex;
+    justify-content: center;
+}
+.texto {
+    display: flex;
+    max-width: 1250px;
+    background-color: #137458b3;
+    padding: 15px;
+    border-radius: 15px;
+}
+#texto_ {
+    font-family: 'Dancing Script';
+    font-size: 52px;
+    align-items: center;
+    text-align: justify;
+    color: #fffffe;
+}
+#direc {
+    font-family: 'Dancing Script';
+    font-size: 52px;
+    color: #ffff00;
+    text-decoration: none;
+}

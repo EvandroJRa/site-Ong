@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Exo:ital,wght@0,100;0,200;0,300;1,400&family=Inter:wght@100;200;300;400;500;600;700;800&family=Kanit:wght@100;300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;1,100&display=swap');
 *{
-    font-family: 'Overpass';
+    font-family: cursive;
     font-size: 24px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    letter-spacing: 1px; /* espaçamento das letras*/
 }
 /* Header*/
 .head-top {    
@@ -101,17 +101,31 @@ h2 {
    color: blueviolet;
 }
 /* Galeria de Imagens */
+.galery {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#galery {
+    font-size: 56px;
+    padding: 20px;
+    gap: 35px;
+}
 .cardx_dog,
 .cardx_cat {
-    background-color: rgb(255, 239, 219);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 1500px;
     gap: 30px;
     transition: all .4s;
-    margin-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 15%;
+
 }
 .image-container {
     display: flex;
@@ -148,118 +162,5 @@ h2 {
     margin: 15px;
     gap: 30px;
 }
-/* cards e descrição     */
-section {
-    width: 100%;
-    color: #000000;
-    padding: 10px;
-    background-color: antiquewhite;
-}   
-.card-container {
-    display: flex;
-    justify-content: center;
-}
-.card_container1, .card1, .card2, .card3 {
-    border: 1px solid #000; /* Adicione a borda aqui */
-    padding: 10px; /* Adicione o preenchimento interno desejado */
-    margin-right: 20px; /* Para adicionar algum espaço entre os cartões */
-    max-width: 400px; /* Define uma largura máxima para evitar que o texto se estenda indefinidamente */
-    text-align: center;
-    transition: all  .4s;
-    gap: 15px;
-    box-shadow: 5px 5px 5px 3px rgb(142, 156, 160);
-}
-.card_container1 h1 {
-    padding: 10px;
-    font-size: 1.5em; /* Tamanho do texto para o título */
-    text-align: center;
-}
-.icon-dog {
-    font-size: 2.0em;
-}
-.card1 h2 {
-    font-size: 1.5em; /* Tamanho do texto para o título */
-}
-.card1 p {
-    font-size: 1em; /* Tamanho do texto para o parágrafo */
-}
-.card_container1:hover {
-    background-color: #000000; 
-    color: #fffffe;
-    border: #ffe600 solid 1px;
-    cursor: pointer;
-}
-.card1:hover {
-    background-color: #575757; 
-    color: #fffffe;
-    border: #ffe600 solid 1px;
-    cursor: pointer;
-}
-.card2:hover {
-    background-color: #756f6f; 
-    color: #fffffe;
-    border: #ffe600 solid 1px;
-    cursor: pointer;
-}
-.card3:hover {
-    background-color: #756f6f; 
-    color: #fffffe;
-    border: #ffe600 solid 1px;
-    cursor: pointer;
-}
-/* -------------------*/
-.card-container1 {
-    display: flex;
-    justify-content: center;
-    padding: 15px;  
-}
-.card_container2, .cards1, .cards2, .cards3 {
-    border: 1px solid #000; /* Adicione a borda aqui */
-    padding: 10px; /* Adicione o preenchimento interno desejado */
-    margin-right: 20px; /* Para adicionar algum espaço entre os cartões */
-    max-width: 400px; /* Define uma largura máxima para evitar que o texto se estenda indefinidamente */
-    text-align: center;
-    transition: all  .4s;
-    box-shadow: 5px 5px 5px 3px rgb(142, 156, 160);
-}
-
-.card_container2 h1 {
-    padding: 10px;
-    font-size: 1.5em; /* Tamanho do texto para o título */
-    text-align: center;
-}
-.icon-dog {
-    font-size: 2.0em;
-
-}
-.cards1 h2 {
-    font-size: 1.5em; /* Tamanho do texto para o título */
-}
-.cards1 p {
-    font-size: 1em; /* Tamanho do texto para o parágrafo */
-}
-.card_container2:hover {
-    background-color: #000000; 
-    color: #fffffe;
-    border: #ffe600 solid 1px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px rgb(16, 65, 78);
-}
-.cards1:hover {
-    background-color: #575757; 
-    color: #fffffe;
-    border: #ffe600 solid 1px;
-    cursor: pointer;
-}
-.cards2:hover {
-    background-color: #756f6f; 
-    color: #fffffe;
-    border: #ffe600 solid 1px;
-    cursor: pointer;
-}
-.cards3:hover {
-    background-color: #756f6f; 
-    color: #fffffe;
-    border: #ffe600 solid 1px;
-    cursor: pointer;
-}
+/* */
+/* */
