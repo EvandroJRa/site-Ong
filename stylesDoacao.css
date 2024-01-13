@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;1,100&display=swap');
 *{
     
-    font-family: cursive;
+    font-family: cursive, Arial, Helvetica, sans-serif;
     font-size: 24px;
     margin: 0;
     padding: 0;

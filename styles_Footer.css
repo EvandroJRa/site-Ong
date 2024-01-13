@@ -8,7 +8,7 @@
     --color-neutral-40: #f5f5f5;
 }
 *{
-    font-family: cursive;
+    font-family: cursive, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
