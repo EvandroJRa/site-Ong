@@ -1,0 +1,26 @@
+
+/* Media query para telas menores que 600 pixels de largura */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url('adons/imagens/logo/error.png');
+        background-size: cover; /* Ajusta o tamanho da imagem para cobrir o corpo */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita a repetição da imagem */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 50vh ;
+
+    }
+    header, main, section, .cadastro, footer {
+        display: none;
+    }
+    .head-top, .carousel-container, h1, h2, h3, p {
+        display: none;
+    }
+  }
+  
+  
+
+
