@@ -15,7 +15,7 @@
     letter-spacing: 1px; /* espaçamento das letras*/
 }
 footer {
-    width: 100%;
+    width: auto;
     color: var(--color-neutral-40);
 }
 .footer-link {
@@ -111,6 +111,7 @@ footer {
     font-size: 0.8rem;
     padding: 12px;
     font-weight: 100;
+    bottom: 0;
 }
 @media screen and (max-widht: 768px) {
     #footer_content {
