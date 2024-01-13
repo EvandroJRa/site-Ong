@@ -105,11 +105,13 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 #galery {
     font-size: 56px;
     padding: 20px;
     gap: 35px;
+    margin: 25px;
 }
 .cardx_dog,
 .cardx_cat {
@@ -119,13 +121,8 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 1500px;
     gap: 30px;
     transition: all .4s;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 15%;
-
 }
 .image-container {
     display: flex;
@@ -134,9 +131,8 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 10px 10px 5px 12px rgb(142, 156, 160);
+    box-shadow: 10px 10px 5px 10px rgb(142, 156, 160);
     margin: 15px;
-    gap: 30px;
     transition: all .5s;
 }
 .image-container:hover {
@@ -148,7 +144,7 @@ h2 {
     text-align: center;
     color: #f5ebeb;
     background-color: #24685f;
-    box-shadow: 10px 10px 5px 12px rgb(115, 128, 117);
+    box-shadow: 10px 10px 5px 10px rgb(115, 128, 117);
     margin: 15px;
     gap: 30px;
 }
